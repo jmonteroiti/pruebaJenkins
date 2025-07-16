@@ -10,7 +10,7 @@ pipeline {
         }
     }
     post {
-        allways {
+        always {
             echo "Success pipeline by Jmontero"
         }
     }
