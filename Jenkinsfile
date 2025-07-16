@@ -11,7 +11,7 @@ pipeline {
     }
     post {
         always {
-            echo "Success pipeline by me"
+            echo "Success pipeline by me with new branch"
         }
     }
 }
