@@ -11,7 +11,7 @@ pipeline {
     }
     post {
         always {
-            echo "Success pipeline by Jmontero"
+            echo "Success pipeline by me"
         }
     }
 }
