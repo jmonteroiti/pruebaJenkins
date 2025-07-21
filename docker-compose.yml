@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  jenkins:
+    build: .
+    container_name: jenkins-master
+    ports:
+      - "8010:8080"
+    volumes:
+      - ./datos_jenkins:/var/jenkins_home/datos_jenkins
+    networks:
+      - network_jenkins
+    restart: unless-stopped
+
+networks:
+  network_jenkins:
+    driver: bridge
